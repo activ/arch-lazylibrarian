@@ -9,7 +9,8 @@ RUN chmod +x /root/*.sh /home/nobody/*.sh && \
 	/bin/bash /root/install.sh
 
 VOLUME ["/config"]
-VOLUME ["/data"]
+VOLUME ["/books"]
+VOLUME ["/downloads"]
 
 EXPOSE 5299/tcp
 CMD ["/bin/bash", "/root/init.sh"]
