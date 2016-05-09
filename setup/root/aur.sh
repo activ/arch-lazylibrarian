@@ -26,7 +26,7 @@ su -c "$aur_helper -S $aur_packages --noconfirm" - makepkg-user
 pacman -Ru $(pacman -Qgq base-devel | grep -v pacman | grep -v sed | grep -v grep | grep -v gzip) --noconfirm
 
 # remove git
-pacman -Ru git --noconfirm
+#pacman -Ru git --noconfirm
 
 # remove makepkg-user account
 userdel -r makepkg-user
